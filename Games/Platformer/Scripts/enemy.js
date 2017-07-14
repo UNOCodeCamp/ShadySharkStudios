@@ -1,12 +1,13 @@
 function FloorHazard()
 {
 
-    this.x = null;
-    this.y = null;
+
     this.width = 32;
     this.height = 32;
     this.image = new Image();
-    this.image.src = "";
+    this.image.src = "Assets/sprite_minefield0.png";
+    this.x = Math.random() * (viewport.width - this.width);
+    this.y = Math.random() * (viewport.height - this.height);
 
     this.draw = function()
     {
@@ -30,7 +31,7 @@ function CeilingHazard()
     this.width = 32;
     this.height = 32;
     this.image = new Image();
-    this.image.src = "";
+    this.image.src = "Assets/sprite_jellyfish0.png";
 
     this.draw = function()
     {

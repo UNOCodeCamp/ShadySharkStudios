@@ -7,8 +7,8 @@ function Exit()
     this.y = 0;
     this.width = 32;
     this.height = 32;
-    this.image = new Image();
-    this.image.src = "";
+    this.image = new Image()
+    this.image.src = "Assets/sprite_exit0.png";
 
     this.draw = function()
     {
